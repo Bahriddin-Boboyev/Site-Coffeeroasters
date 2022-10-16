@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* barlow-regular - latin */
 @font-face {
   font-family: 'Barlow';
@@ -34,14 +41,16 @@
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 h1,
@@ -91,6 +100,8 @@ img {
   background-color: #0E8784;
   border-radius: 6px;
   padding: 15px 31px;
+  -webkit-transition: 0.7s ease;
+  -o-transition: 0.7s ease;
   transition: 0.7s ease;
 }
 
@@ -106,14 +117,24 @@ img {
 }
 
 .site-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .site-header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .site-herader__logo-link {
@@ -140,6 +161,8 @@ img {
 .site-header__link::after{
     content: '';
     position: absolute;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
     transition: 0.5s ease;
     width: 0;
     height: 5px;
@@ -205,9 +228,15 @@ img {
 }
 
 .collection__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .collection__item {
@@ -280,9 +309,15 @@ img {
 .chose__list {
   margin: 0 auto;
   max-width: 1111px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .chose__item {
@@ -291,12 +326,17 @@ img {
   padding: 48px 72px 48px 48px;
   max-width: 350px;
   text-align: center;
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
   transition: 1s ease;
-  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0 0 20px 2px rgba(0, 0, 0, 1);
+          box-shadow: 0 0 20px 2px rgba(0, 0, 0, 1);
 }
 
 .chose__item:hover{
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
   z-index: 2;
 }
 
@@ -387,9 +427,15 @@ img {
   height: 1px;
   border: 1px solid #FDD6BA;
   z-index: -1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 67px;
 }
 
@@ -403,9 +449,15 @@ img {
 }
 
 .work__sup-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 64px;
 }
 
@@ -451,15 +503,27 @@ img {
 .footer__container{
   max-width: 1111px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer__sup-block{
   width: 620px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__logo {
@@ -468,8 +532,12 @@ img {
 }
 
 .footer__list{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__item a{
@@ -486,6 +554,8 @@ img {
 
 .footer__item a::after{
   content: '';
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
   width: 0;
   height: 5px;
@@ -505,9 +575,15 @@ img {
 
 .footer__icon-list{
   width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   
 }
 .footer__icon-item a{
@@ -516,11 +592,15 @@ img {
   height: 24px;
   background-repeat: no-repeat;
   background-image: url(../img/facebook-icon.svg);
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
   transition: 1s ease;
 }
 
 .footer__icon-item a:hover{
-  transform: scale(1.8);
+  -webkit-transform: scale(1.8);
+      -ms-transform: scale(1.8);
+          transform: scale(1.8);
   z-index: 2;
 }
 
